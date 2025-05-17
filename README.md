@@ -32,6 +32,14 @@ DirHawk offers advanced features like status code filtering, rate limiting, retr
 ## 🛠️ Requirements
 
 - Python 3.8 or higher
+## 🔧 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Mr-cookie404/DirHawk.git
+cd DirHawk
+
 
 ### Install dependencies:
 
