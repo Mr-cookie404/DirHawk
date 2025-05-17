@@ -37,3 +37,29 @@ DirHawk offers advanced features like status code filtering, rate limiting, retr
 
 ```bash
 pip install -r requirements.txt
+
+🔹 Basic Scan
+
+python dirhawk.py -u https://example.com
+🔹 Use a Custom Wordlist
+
+python dirhawk.py -u https://example.com -w wordlists/custom.txt
+🔹 Filter by Status Code (Only 200 OK)
+
+python dirhawk.py -u https://example.com --filter 200
+🔹 Set Rate Limit (1 request/sec)
+
+python dirhawk.py -u https://example.com --rate 1
+🔹 Save Results to a Custom File
+
+python dirhawk.py -u https://example.com -o my_output.txt
+🔹 Show Help
+
+python dirhawk.py --help
+
+
+🖥️ Sample Output
+
+[200] https://example.com/admin
+[403] https://example.com/.htaccess
+[301] https://example.com/login → https://example.com/login/
